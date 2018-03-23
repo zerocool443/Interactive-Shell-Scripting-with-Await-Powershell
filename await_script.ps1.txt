@@ -1,0 +1,14 @@
+import-module await
+Start-AwaitSession
+Send-AwaitCommand "your first commands here"
+start-sleep 5
+Send-AwaitCommand "your second commands here"
+start-sleep 5
+Send-AwaitCommand "your third commands here"
+start-sleep 5
+Send-AwaitCommand "your fourth commands here"
+start-sleep 5
+Send-AwaitCommand status
+$output = Receive-AwaitResponse  
+$output
+Stop-AwaitSession
